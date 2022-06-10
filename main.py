@@ -17,6 +17,9 @@ for page in page_urls:
 
     driver.get(page)
     driver.maximize_window()
+    
+    if driver.title == "Attention Required! | Cloudflare":
+        time.sleep(40)
 
     product_t = [element.text for element in
                  driver.find_elements(by=By.CLASS_NAME, value="product-listing__product-name")]
