@@ -6,7 +6,6 @@ import undetected_chromedriver as uc
 
 page_urls = ["https://www.g2.com/categories/online-backup",
              "https://www.g2.com/categories/online-backup?order=g2_score&page=2#product-list"]
-             # "https://www.g2.com/categories/online-backup?order=g2_score&page=3#product-list"]
 product_title = []
 float_ratings = []
 hyperlinks = []
