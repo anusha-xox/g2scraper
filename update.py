@@ -29,7 +29,7 @@ for page_no in page_urls:
             print(product_titles)
 
             ratings = [rating.getText() for rating in soup.find_all(name="span", class_="fw-semibold")]
-            for i in range(len(product_titles)):
+            for i in range(len(p_titles)+1):
                 try:
                     rating = float(ratings[i])
                     if 0 <= rating <= 5:
