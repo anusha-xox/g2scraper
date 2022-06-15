@@ -32,11 +32,10 @@ for page_no in page_urls:
                 if 0 <= float(rating) < 5:
                     float_ratings.append(rating)
             except ValueError:
-                pass
-                # if len(float_ratings) == len(product_titles):
-                #     pass
-                # else:
-                # float_ratings.append(0.1)
+                if len(float_ratings) == len(product_titles):
+                    pass
+                elif len(float_ratings) < len(product_titles):
+                    float_ratings.append(0.1)
         print(len(float_ratings))
         print(float_ratings)
 
