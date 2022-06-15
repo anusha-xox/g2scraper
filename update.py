@@ -4,7 +4,7 @@ import lxml
 import urllib.parse
 import pandas
 import time
-API_TOKEN = "620937eccb6c48fca718f6eae7592cbc0de44d7e010"
+API_TOKEN = ""
 page_urls = ["https://www.g2.com/categories/online-backup",
              "https://www.g2.com/categories/online-backup?order=g2_score&page=2",
              "https://www.g2.com/categories/online-backup?order=g2_score&page=3",
